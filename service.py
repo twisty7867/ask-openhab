@@ -6,7 +6,10 @@ app = Flask(__name__)
 
 @app.route("/")
 def handle_ask_request():
-    
+    r = request.get_json()
+    print r
+    return
+
 
 if __name__ == "__main__":
     app.run()
